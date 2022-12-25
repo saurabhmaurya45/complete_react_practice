@@ -35,7 +35,7 @@ function App() {
       <div className='expenses'>
           <DisplayExpenses expenses = {expenses}/>
       </div>
-      
+        
     </>
   );
 }
