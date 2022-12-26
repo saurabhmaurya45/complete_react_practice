@@ -2,7 +2,7 @@ import React from 'react';
 
 import  './Cards.css';
 
-function Cards(props){
+const  Cards = props=>{
     const classes = "Cards " + props.className;
     return <div className={classes}>{props.children}</div>
 }

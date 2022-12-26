@@ -3,7 +3,7 @@ import DisplayExpenses from './components/Expenses/DisplayExpenses';
 import './components/Expenses/Expenses.css';
 import Cards from './components/UI/Cards';
 
-function App() {
+const  App = ()=> {
   const expenses = [
     {
       id: 'e1',
