@@ -1,7 +1,7 @@
 import React from "react";
-import DisplayExpenses from './components/DisplayExpenses';
-import './components/Expenses.css';
-import Cards from './components/Cards';
+import DisplayExpenses from './components/Expenses/DisplayExpenses';
+import './components/Expenses/Expenses.css';
+import Cards from './components/UI/Cards';
 
 function App() {
   const expenses = [
@@ -32,23 +32,23 @@ function App() {
   ];
 
   // react under the hood looks like this it transforms below written code into this format
-  return React.createElement(
-    'div',
-    {},
-    React.createElement('h2',{},'Let\'s get Started'),
-    React.createElement(Cards, {},
-      React.createElement(DisplayExpenses, {expenses :  expenses}))
-  );
-  
-  // return (
-  //   <>
-  //     <h2>Let's get started!</h2>
-  //     <Cards className='expenses'>
-  //         <DisplayExpenses expenses = {expenses}/>
-  //     </Cards>
-        
-  //   </>
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2',{},'Let\'s get Started'),
+  //   React.createElement(Cards, {},
+  //     React.createElement(DisplayExpenses, {expenses :  expenses}))
   // );
+
+  return (
+    <>
+      <h2>Let's get started!</h2>
+      <Cards className='expenses'>
+          <DisplayExpenses expenses = {expenses}/>
+      </Cards>
+        
+    </>
+  );
 }
 
 export default App;
