@@ -1,5 +1,6 @@
 import DisplayExpenses from './components/DisplayExpenses';
 import './components/Expenses.css';
+import Cards from './components/Cards'
 
 function App() {
   const expenses = [
@@ -32,9 +33,9 @@ function App() {
   return (
     <>
       <h2>Let's get started!</h2>
-      <div className='expenses'>
+      <Cards className='expenses'>
           <DisplayExpenses expenses = {expenses}/>
-      </div>
+      </Cards>
         
     </>
   );
